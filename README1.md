@@ -4,3 +4,4 @@ git status
 git add
 git commit
 ```
+Some new text
