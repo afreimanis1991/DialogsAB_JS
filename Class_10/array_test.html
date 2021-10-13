@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="error"></p>
+<p id="demo3"></p>
+
+<script>
+try
+{
+const cars = ["Saab","Volvo", "BMW", "Nissan"];
+document.getElementById("demo").innerHTML = cars;
+let N = cars.length
+document.getElementById("demo2").innerHTML = "Massiva garums: " + N;
+document.getElementById("demo3").innerHTML = "Pedeja elementa vertiba: " + cars[N-1];
+}
+catch(err)
+{
+document.getElementById("error").innerHTML = err;
+}
+</script>
+
+</body>
+</html>
