@@ -17,3 +17,4 @@ document.getElementById("demo2").innerHTML = cars;
 cars.pop();
 document.getElementById("demo2").innerHTML = cars;
 - Masiva izgriezshana ar index.shift metodi, masiva sakuma
+- Vertibas(u) ievietosana ar index.splice() metodi.
