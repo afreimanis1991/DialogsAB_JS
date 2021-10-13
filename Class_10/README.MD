@@ -18,3 +18,6 @@ cars.pop();
 document.getElementById("demo2").innerHTML = cars;
 - Masiva izgriezshana ar index.shift metodi, masiva sakuma
 - Vertibas(u) ievietosana ar index.splice() metodi.
+- Masivu vertibas kartosana - sort() pec alfabeta/ ascii table
+-Masiva " pagreisana" otradi - reverse()
+-Masivu ar skaitleim kartosana ir japievieno papildu konstruckicju  - sort(function(a, b){return a - b})

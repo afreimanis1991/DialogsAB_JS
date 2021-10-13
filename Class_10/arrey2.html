@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="error"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+try
+{
+const cars = ["Saab","Volvo", "BMW", "Nissan"];
+const jauna_masina = ["Audi"];
+const pilnais_saraksts = cars.concat(jauna_masina);
+
+document.getElementById("demo").innerHTML =cars;
+document.getElementById("demo2").innerHTML
+=pilnais_saraksts;
+document.getElementById("demo3").innerHTML
+=pilnais_saraksts.sort();
+document.getElementById("demo4").innerHTML
+=pilnais_saraksts.reverse();
+
+}
+catch(err)
+{
+document.getElementById("error").innerHTML = err;
+}
+</script>
+
+</body>
+</html>
