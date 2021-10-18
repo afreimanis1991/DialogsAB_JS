@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="error"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+const points = ["Saab","Volvo", "BMW", "Nissan"];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction() {
+    points.sort(function(a, b){return 0.5 - Math.random()});
+    document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
