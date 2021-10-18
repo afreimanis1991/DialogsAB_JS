@@ -1,0 +1,29 @@
+<html>
+<head>
+
+    <script>
+try {
+    document.getElementById("demo1").innerHTML = "Izdruka no internal script";
+}
+catch (err) {
+    alert("Kluda no internal script:" +err);
+
+}
+</script>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="error"></p>
+    <script>
+try {
+    document.getElementById("demo1").innerHTML = "Izdruka no inline script";
+}
+catch (err) {
+    alert("Kluda  no inline script:" +err);
+}
+</script>
+    
+</body>
+</head>
+</html>
