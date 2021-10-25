@@ -1,13 +1,11 @@
 <html>
 <head>
-
     <script>
 try {
     document.getElementById("demo1").innerHTML = "Izdruka no internal script";
 }
 catch (err) {
-    alert("Kluda no internal script:" +err);
-
+    document.getElementById("error").innerHTML = "Kluda no internal script" + err;
 }
 </script>
 </head>
@@ -20,7 +18,7 @@ try {
     document.getElementById("demo1").innerHTML = "Izdruka no inline script";
 }
 catch (err) {
-    alert("Kluda  no inline script:" +err);
+    document.getElementById("error").innerHTML = "Kluda no internal script" + err;
 }
 </script>
     
