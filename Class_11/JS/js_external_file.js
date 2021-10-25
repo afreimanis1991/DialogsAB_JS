@@ -1,6 +1,6 @@
 try {
-    document.getElementById("demo1").innerHTML = "Izdruka no external script";
+    document.getElementById("demo3").innerHTML = "Izdruka no external script";
 }
 catch (err) {
-    document.getElementById("error").innerHTML = "Kluda no external script" + err;
+    alert("Kluda no external script: " + err);
 }
