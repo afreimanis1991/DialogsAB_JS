@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="arr">
+      <div class="some-bg"></div>
+      <div class="grid">
+        <div class="form">
+          <form id="fruit" onsubmit="return false">
+            <ul>
+              <li>
+                <label class="heading">Let's add some fruits!</label>
+              </li>
+              <li>
+                <input
+                  name="fruitName"
+                  value=" "
+                  placeholder="Add your favorite fruits here!"
+                />
+              </li>
+              <li>
+                <button id="btn">Add To Front</button>
+              </li>
+              <li><button id="btn-back">Add To back</button></li>
+            </ul>
+          </form>
+        </div>
+
+        <div class="outcome">
+          <h2 class="heading-basket">My basket:</h2>
+          <p id="demo"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js" async></script>
+</html>

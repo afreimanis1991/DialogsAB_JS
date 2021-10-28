@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+$font_display: "Pacifico", cursive;
+$color_red: #ce0031;
+$color_yellow: #f4c100;
+$color_purple: #9789c2;
+$color_green: #9eba9f;
+:root {
+  font-size: 16px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.arr {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-color: $color_yellow;
+}
+
+.some-bg {
+  background-image: url(../images/grapes-strawberries-pineapple-kiwi-apricot-banana-whole-pineapple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 15px;
+  color: white;
+}
+
+.heading {
+  font-family: $font_display;
+  font-size: 3rem;
+  color: $color_red;
+  width: 100%;
+}
+
+.heading-basket {
+  font-family: $font_display;
+  font-size: 2.8rem;
+  color: $color_purple;
+  width: 100%;
+}
+
+input {
+  background-color: white;
+  height: 80px;
+  width: 250px;
+  font-size: 40px;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 255px;
+  height: 60px;
+  color: $color_purple;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: $color_purple;
+    border: 0.25em solid white;
+    transform: scale(1.2);
+    transition: ease-in-out;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+  position: relative;
+  left: 10%;
+}
+
+#demo {
+  position: relative;
+  top: 10%;
+
+  color: $color_red;
+  font-size: 1.5rem;
+  border: 5px solid $color_red;
+  padding: 20px;
+  width: 40%;
+  height: 40%;
+  text-align: center;
+}
