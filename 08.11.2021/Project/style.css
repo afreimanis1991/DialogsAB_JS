@@ -115,3 +115,14 @@
     height: 100%;
     z-index: 1;
   }
+
+  .gameover {
+    background-color: #caa8c3;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    width: 500px;
+  }

@@ -39,7 +39,7 @@ let randomWord;
 let score = 0;
 
 // Init time
-let time = 20;
+let time = 10;
 
 // Set difficulty to value in ls or medium
 let difficulty =
@@ -89,12 +89,60 @@ function updateTime() {
 }
 
 // Game over, show end screen
-function gameOver() {
-  endgameEl.innerHTML = `
-    <h1>Time ran out</h1>
-    <p>Your final score is ${score}</p>
-    <button onclick="location.reload()">Reload</button>
-  `;
+function gameOver() {  
+  // Fixes dual-screen position                         Most browsers      Firefox  
+  // var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;  
+  // var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;  
+            
+  // width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;  
+  // height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;  
+            
+  // var left = ((width / 2) - (w / 2)) + dualScreenLeft;  
+  // var top = ((height / 2) - (h / 2)) + dualScreenTop;  
+  // var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);  
+
+  // // Puts focus on the newWindow  
+  // if (window.focus) {  
+  //     newWindow.focus();  
+  // }  
+
+
+  // var width = 500;
+  //   var height = 210;
+  //   var left = parseInt((screen.availWidth/2) - (width/2));
+  //   var top = parseInt((screen.availHeight/2) - (height/2));
+  //   var windowFeatures = "width=" + width + ",height=" + height + ",status,resizable,left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top;
+  //    jsWindow = window.open(
+  //     'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/08.11.2021/Project/gameover.html',
+  //      'gameover',
+  //       windowFeatures);
+
+  
+
+  let jsWindow = window.open(
+    'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/08.11.2021/Project/gameover.html',
+    'gameover',
+    'height=210,width=500');
+    jsWindow.moveTo(413, 395);
+
+
+    endgameEl.innerHTML = 
+    `
+        <button onclick="location.reload()">Reload</button>`;
+
+//  let features = 'height=600,width=800',
+//url = 'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/Class_10/arrey2.html';
+//let jsWindow = window.open(url, 'arrey2', features);
+
+
+//window.alert("Game Over");
+
+//  endgameEl.innerHTML = 
+//  `
+//     <h1>Time ran out</h1>
+//     <p>Your final score is ${score}</p>
+//     <button onclick="location.reload()">Reload</button>
+//   `;
 
   endgameEl.style.display = 'flex';
 }
