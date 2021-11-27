@@ -5,11 +5,22 @@
     
 <div class="gameover">
     <h2>Time ran out</h2>
-    <p>Your final score is "score"</p>
+    <script type="text/javascript">
+
+    function gameover(){
+        var str = "\nScore:" + score;
+        document.getElementById(
+            'Text').innerHTML = str;
+        
+    }
+    </script>
+    <!-- <p>Your final score is "score"</p> -->
 </div>
 
 
-<script src="script.js"></script>
+<script type="text/javascript"
+src="script.js">
+</script>
 </body>
 </html> 
  

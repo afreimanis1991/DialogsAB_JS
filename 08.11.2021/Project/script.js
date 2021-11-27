@@ -124,11 +124,11 @@ function gameOver() {
     'gameover',
     'height=210,width=500');
     jsWindow.moveTo(413, 395);
+        
 
 
     endgameEl.innerHTML = 
-    `
-        <button onclick="location.reload()">Reload</button>`;
+    `<button onclick="location.reload()">Reload</button>`;
 
 //  let features = 'height=600,width=800',
 //url = 'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/Class_10/arrey2.html';
