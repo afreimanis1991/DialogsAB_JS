@@ -143,9 +143,9 @@ function gameOver() {
 //url = 'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/Class_10/arrey2.html';
 //let jsWindow = window.open(url, 'arrey2', features);
 
-// let result = confirm('Are you sure you want to close this window?'); //Confirm 
-// let message= result ? 'Game Over' : 'You may close this window';  // Conforim
-// alert(message); // Confirm
+let result = confirm('Are you sure you want to close this window?'); //Confirm 
+let message= result ? 'Game Over' : 'You may close this window';  // Conforim
+alert(message); // Confirm
 
 // window.alert("Game Over");   // Alert
 
