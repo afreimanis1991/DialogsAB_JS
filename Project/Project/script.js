@@ -128,24 +128,24 @@ function gameOver() {
 
   
 
-  // let jsWindow = window.open(
-  //   'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/08.11.2021/Project/gameover.html',
-  //   'gameover',
-  //   'height=210,width=500');
-  //   jsWindow.moveTo(413, 395);
+  let jsWindow = window.open(
+    'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/Project/Project/gameover.html',
+    'gameover',
+    'height=210,width=500');
+    jsWindow.moveTo(413, 395);
         
 
 
-    // endgameEl.innerHTML = 
-    // `<button onclick="location.reload()">Reload</button>`;
+    endgameEl.innerHTML = 
+    `<button onclick="location.reload()">Reload</button>`;
 
 //  let features = 'height=600,width=800',
 //url = 'file:///C:/Users/WorkFromHome/Desktop/DialogsAB_JS/Class_10/arrey2.html';
 //let jsWindow = window.open(url, 'arrey2', features);
 
-let result = confirm('Are you sure you want to close this window?'); //Confirm 
-let message= result ? 'Game Over' : 'You may close this window';  // Conforim
-alert(message); // Confirm
+// let result = confirm('Are you sure you want to close this window?'); //Confirm 
+// let message= result ? 'Game Over' : 'You may close this window';  // Conforim
+// alert(message); // Confirm
 
 // window.alert("Game Over");   // Alert
 
@@ -167,12 +167,12 @@ alert(message); // Confirm
 // alert(feedback);
 
 
- endgameEl.innerHTML = 
- `
-    <h1>Time ran out</h1>
-    <p>Your final score is ${score}</p>
-    <button onclick="location.reload()">Reload</button>
-  `;
+//  endgameEl.innerHTML = 
+//  `
+//     // <h1>Time ran out</h1>
+//     // <p>Your final score is ${score}</p>
+// //     <button onclick="location.reload()">Reload</button>
+//   `;
 
   endgameEl.style.display = 'flex';
 }
