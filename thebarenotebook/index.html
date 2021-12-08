@@ -8,12 +8,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet"> 
 <!-- https://fonts.google.com/  make fonts-->
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
     <body>
         <section class="header">
             <nav>
-                <a href="index.html"><img src="media/logo3.png"></a>
-                <div class="nav-links">
+                <a href="index.html"><img src="media/logo5.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -21,7 +24,10 @@
                         <li><a href="">CONTACTS</a></li>
                      </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
+                      
+
             <div class="text-box">
                 <h1>Bookbinding and Notebooks</h1>
                 <p>Handmade in Latvia</p>
@@ -30,7 +36,17 @@
             </div>
 
         </section>
-      
+        <!-- -------JavaScript for toggle Menu------ -->
+      <script>
+
+          var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+              navLinks.style.right = "0";
+          }
+          function hideMenu(){
+              navLinks.style.right = "-200px";
+          }
+          </script>
 
     </body>
 </html>
