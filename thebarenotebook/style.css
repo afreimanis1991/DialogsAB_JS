@@ -23,9 +23,9 @@ nav{
     align-items: center;
 }
 
-nav img{
+/* nav img{
     width: 210px;
-}
+} */
 .nav-links{
     flex:1;
     text-align: right;
@@ -33,7 +33,7 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 0px 12px;
     position: relative;
 }
 
@@ -101,18 +101,140 @@ font-size: 52px;
     background: #f44336;
     transition: 1s;
 }
-
+.categories{
+    margin: 70px 0px;
+}
 .row{
     margin-top: 3%;
     display: flex;
     justify-content: space-between;
+}
     
-    }
     .col-3{
-        flex-basis: 31%;
-        min-width: 250px;
+        flex-basis: 20%;
+        min-width: 20px;
         margin-bottom: 30px;
-        margin-left: 130px;
-    }
+        margin-left: 60px;
+        
+            }
     
-          
+    .col-3 img{
+        width: 170%;
+    }
+
+    .small-container{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 190px;
+                       
+    }
+        
+    .col-4{
+        flex-basis: 25%;
+        padding:30px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        padding-left: 60px;
+        transition: transform 0.5s;
+        
+    }
+
+    .col-4 img{
+        width: 160%;
+    }
+    .title{
+        text-align: center;
+        padding-left: 175px;
+        margin: 0 80px;
+        position: relative;
+        line-height: 50px;
+        color: rgb(15, 15, 15);
+        font-family: 'Lora', serif;
+    }
+    .title:after{
+        content: '';
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position:absolute;
+        bottom:0;
+        left:59.5%;
+        transform:translateX(-50%);
+       
+ }
+
+ h4{
+     color: rgb(12, 9, 9);
+     font-weight: normal;
+     font-size: 20px;
+ }
+ .col-4 p{
+     font-size: 18px;
+ }
+
+ .rating .fas{
+     color:#ff523b;
+ }
+
+ .col-4:hover{
+     transform: translateY(-6px)
+ }
+
+ .offer{
+     background: radial-gradient(#fff,#ffd6d6);
+     margin-top: -10px;
+     padding-left: 305px;
+ }
+ 
+ .col-2{
+    flex-basis: 255%;
+    padding:10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position:relative;
+    
+    
+}
+.title2{
+    text-align: left;
+    padding-left: 0px;
+    margin: 0 0px;
+    position: relative;
+    line-height: 50px;
+    color: rgb(15, 15, 15);
+    padding-top: 80px;
+    font-size: 25px;
+}
+
+.title3{
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    
+}
+
+.title4{
+    padding-top: 12px;
+    font-size: 19px;
+}
+
+.col-2 .offer-img{
+    padding: 40px;
+}
+
+.btn2{
+     display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 10px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+
+.btn2:hover{
+background: #563434;
+}
+
