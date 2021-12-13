@@ -252,13 +252,13 @@ background: #563434;
 }
     
     .col-5{
-        background: radial-gradient(#fff,#f5d6d6);
+        background: radial-gradient(#fff,#f8f5f5);
         flex-basis: 30%;
-        min-width: 2px;
+        min-width: 22px;
         margin-bottom: 30px;
         margin-left: 30px;
         text-align: center;
-        box-shadow: 30px;
+        box-shadow: 20px 5px 20px 2px rgba(0,0,0,0.1);
         cursor: pointer;
         transition: transform 0.5s;
         
