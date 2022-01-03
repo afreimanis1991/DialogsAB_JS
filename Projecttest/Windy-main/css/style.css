@@ -130,6 +130,21 @@ em {
   -ms-grid-row: 2;
   grid-row: 2;
 }
+.tab-content-4 {
+  display: none;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+.tab-content-5 {
+  display: none;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+.tab-content-6 {
+  display: none;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
 
 .tab-button {
   width: 80%;

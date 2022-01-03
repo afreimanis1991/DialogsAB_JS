@@ -5,10 +5,13 @@ const inputField = document.querySelector(`#city`);
 const btnForm = document.querySelector(`#btn-form`);
 const cityNames = document.querySelector(`#cityName`);
 const temp = document.querySelector(`#temp`);
+const hum = document.querySelector(`#hum`);
 const weather = document.querySelector(`#weather`);
 const tabContainer = document.querySelector(`.tab-container`);
 const tabBtn = document.querySelectorAll(`.tab-button`);
-const ids = [cityNames, temp, weather];
+const sun = document.querySelector(`#sun`);
+const sun2 = document.querySelector(`#sun2`);
+const ids = [cityNames, temp, hum, weather, sun, sun2];
 
 const getWaether = (cityName) => {
   fetch(
@@ -16,7 +19,7 @@ const getWaether = (cityName) => {
   )
     .then((r) => r.json())
     .then((data) => {
-      renderData(cityNames, temp, weather, data);
+      renderData(cityNames, temp, weather, hum, sun, sun2, data);
     });
 };
 tabContainer.addEventListener(`click`, (e) => {
