@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Whats the waether like?</title>
+  </head>
+  <body>
+    <div class="container--start">
+      <div class="header">
+        <h1><i class="far fa-snowflake"></i> Windy</h1>
+        <em>Search for weather in any city!</em>
+      </div>
+
+      <form id="form">
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button id="btn-form">Search</button>
+      </form>
+      <div class="tab-container">
+        <button class="tab-button" data-tab="1">City info</button>
+        <section class="tab-content-1 x" id="cityName"></section>
+        <button class="tab-button" data-tab="2">Temperature</button>
+        <section id="temp" class="tab-content-2 x"></section>
+        <button class="tab-button" data-tab="3">Weather</button>
+        <section class="tab-content-3 x" id="weather"></section>
+      </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
