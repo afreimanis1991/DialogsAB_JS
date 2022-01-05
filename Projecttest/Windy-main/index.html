@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Whats the waether like?</title>
+    
   </head>
+ 
   <body>
     <div class="container--start">
       <div class="header">
@@ -23,8 +25,18 @@
       </div>
 
       <form id="form">
-        <input type="text" id="city" placeholder="Enter city name" />
-        <button id="btn-form">Search</button>
+        <!-- <input type="text" id="city" placeholder="Enter city name" /> -->
+        <select id = "myList" > 
+          <option> ---Choose a country--- </option>  
+          <option> Riga </option>  
+          <option> London </option>  
+          <option> Ogre </option>  
+          <option> Tallinn </option>
+          <option> Vilnius </option> 
+          <option> Warsaw </option> 
+          
+          </select>  
+          <button id="btn-form">Search</button>
       </form>
       <div class="tab-container">
         <button class="tab-button" data-tab="1">City info</button>

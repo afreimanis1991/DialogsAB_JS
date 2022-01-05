@@ -1,7 +1,7 @@
 import { renderData } from "./ui.mjs";
 //To make it work you will need your own API key get it from https://openweathermap.org/
 const apiKey = `5ef9cfbaaf817a372e57933f6f55cb53`;
-const inputField = document.querySelector(`#city`);
+const inputField = document.querySelector(`#myList`);
 const btnForm = document.querySelector(`#btn-form`);
 const cityNames = document.querySelector(`#cityName`);
 const temp = document.querySelector(`#temp`);
@@ -34,6 +34,7 @@ tabContainer.addEventListener(`click`, (e) => {
   document
     .querySelector(`.tab-content-${clicked.dataset.tab}`)
     .classList.add(`content-active`);
+    
 });
 
 btnForm.addEventListener(`click`, (e) => {
@@ -45,5 +46,14 @@ btnForm.addEventListener(`click`, (e) => {
   ids.forEach((curr) => curr.classList.remove(`content-active`));
   tabBtn[0].classList.add(`active-tab`);
   cityNames.classList.add(`content-active`);
-  inputField.value = " ";
+  // inputField.value = " ";
 });
+
+
+
+// Drop down menu 
+
+function favTutorial() {  
+  var mylist = document.getElementById("myList");  
+  // document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+  }  
