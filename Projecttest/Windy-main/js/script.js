@@ -13,9 +13,13 @@ const sun = document.querySelector(`#sun`);
 const sun2 = document.querySelector(`#sun2`);
 const ids = [cityNames, temp, hum, weather, sun, sun2];
 
+
+
 const getWaether = (cityName) => {
   fetch(
     `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`
+    
+  
   )
     .then((r) => r.json())
     .then((data) => {
@@ -39,6 +43,7 @@ tabContainer.addEventListener(`click`, (e) => {
 
 btnForm.addEventListener(`click`, (e) => {
   e.preventDefault();
+  
   let input = inputField.value.split(" ").join("");
   if (input === " ") return;
 
@@ -53,7 +58,27 @@ btnForm.addEventListener(`click`, (e) => {
 
 // Drop down menu 
 
-function favTutorial() {  
-  var mylist = document.getElementById("myList");  
+// function countryList() {  
+//   var mylist = document.getElementById("myList");  
   // document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
-  }  
+  // }  
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const selectDrop = document.querySelector('#countries');
+  
+
+fetch('https://restcountries.com/v3.1/all').then(res => {
+
+return res.json();
+  }).then(data => {
+    let output = "";
+    data.forEach(country => {
+      output += `<option>${country.capital}</option>`;
+    })
+
+    selectDrop.innerHTML = output;
+  })
+  
+  });
+ 

@@ -1,4 +1,4 @@
-function renderData(el1, el2, el3, el4, el5, el6, object) {
+function renderData(el1, el2, el3, el4, el5, el6, el7, object) {
   el1.innerHTML = `<ul>
     <li> Country :${object.sys.country}</li>
     <li>City name: ${object.name}</li>
@@ -17,8 +17,10 @@ function renderData(el1, el2, el3, el4, el5, el6, object) {
   el4.innerHTML = `<p class="text">${object.main.humidity}</p>`;
   el5.innerHTML = `<p class="text">${object.sys.sunrise}</p>`;
   el6.innerHTML = `<p class="text">${object.sys.sunset}</p>`;
+  el7.innerHTML = `<p class="text">${country.capital}</p>`;
 }
 
 
-
 export { renderData as renderData };
+
+
