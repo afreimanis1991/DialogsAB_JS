@@ -12,3 +12,6 @@ console.log("Pec (1): " + document.cookie);
 var cookieText2 = "username2=admin2";
 document.cookie = cookieText2;
 console.log("Pec (2): " + document.cookie);
+
+
+
