@@ -228,36 +228,6 @@ body {
   background-color: #9fe8df;
 }
 
-@-webkit-keyframes show-err {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes show-err {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .card {
     width: 64%;
