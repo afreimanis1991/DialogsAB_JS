@@ -31,7 +31,8 @@ test.each(integerNumbers)(
 const Numbers = [
   [-1, true],
   [0, true],
-  [1.23, false]
+  [1.23, false],
+  [1.5, false]
 ];
 
 test.each(Numbers)(
