@@ -21,13 +21,13 @@ let tipValue = 0.15; //default value -> 15% button is active
 let peopleValue = 1; 
 
 function validateFloat(s){
-    var rgx = /^[0-9]*\.?[0-9]*$/;
-    return s.match(rgx);
+    var RegExp = /^[0-9]*\.?[0-9]*$/;
+    return s.match(RegExp);
 }
 
 function validateInt(s){
-    var rgx = /^[0-9]*$/;
-    return s.match(rgx);
+    var RegExp = /^[0-9]*$/;
+    return s.match(RegExp);
 }
 
 function setBillValue(){
